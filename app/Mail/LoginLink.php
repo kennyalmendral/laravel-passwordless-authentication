@@ -15,26 +15,46 @@ class LoginLink extends Mailable
 
     public $url;
 
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
     public function __construct($url)
     {
         $this->url = $url;
     }
 
-    public function envelope(): Envelope
+    /**
+     * Get the message envelope.
+     *
+     * @return \Illuminate\Mail\Mailables\Envelope
+     */
+    public function envelope()
     {
         return new Envelope(
             subject: 'Your Login Link',
         );
     }
 
-    public function content(): Content
+    /**
+     * Get the message content definition.
+     *
+     * @return \Illuminate\Mail\Mailables\Content
+     */
+    public function content()
     {
         return new Content(
-            view: 'emails.login-link',
+            markdown: 'emails.login-link',
         );
     }
 
-    public function attachments(): array
+    /**
+     * Get the attachments for the message.
+     *
+     * @return array
+     */
+    public function attachments()
     {
         return [];
     }
