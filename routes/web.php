@@ -24,8 +24,7 @@ Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/login/{email}/{token}', [LoginController::class, 'authenticateToken'])
-    ->name('login.token')
-    ->middleware('signed');
+    ->name('login.token');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

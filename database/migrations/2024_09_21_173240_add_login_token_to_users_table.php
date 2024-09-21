@@ -27,7 +27,10 @@ return new class extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['login_token', 'login_token_created_at']);
+            $table->dropColumn([
+                'login_token',
+                'login_token_created_at'
+            ]);
         });
     }
 };
