@@ -1,4 +1,4 @@
-# Laravel Password Authentication
+# Laravel Passwordless Authentication
 
 ### Clone this repository
 ```bash
