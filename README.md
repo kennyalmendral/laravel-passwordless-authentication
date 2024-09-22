@@ -18,7 +18,7 @@ cp .env.example .env
 ```
 
 ### Configure mail settings
-We'll be using an email delivery platform called [Mailtrap](https://mailtrap.io/){:target="_blank"}, as it's both free and user-friendly for email testing. If you don't have an account yet, [create one](https://mailtrap.io/register/signup){:target="_blank"} and [obtain the SMTP credentials](https://help.mailtrap.io/article/5-testing-integration){:target="_blank"}, then add them to your application's `.env` file:
+We'll be using an email delivery platform called [Mailtrap](https://mailtrap.io/), as it's both free and user-friendly for email testing. If you don't have an account yet, [create one](https://mailtrap.io/register/signup) and [obtain the SMTP credentials](https://help.mailtrap.io/article/5-testing-integration), then add them to your application's `.env` file:
 
 ```git
 MAIL_MAILER=smtp
