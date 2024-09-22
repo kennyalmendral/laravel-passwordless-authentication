@@ -44,3 +44,6 @@ php artisan migrate
 ```bash
 php artisan serve
 ```
+
+### Read the blog post
+[https://kennyalmendral.com/laravel-passwordless-authentication/](https://kennyalmendral.com/laravel-passwordless-authentication/)
