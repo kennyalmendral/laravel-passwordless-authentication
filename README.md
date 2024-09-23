@@ -1,5 +1,7 @@
 # Laravel Passwordless Authentication
 
+Passwordless authentication in Laravel without relying on third-party packages.
+
 ### Clone this repository
 ```bash
 git clone https://github.com/kennyalmendral/laravel-passwordless-authentication.git
